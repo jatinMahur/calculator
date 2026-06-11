@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <!-- Scientific Functions -->
+    <div class="section-title">Scientific Functions</div>
+
+    <div class="buttons scientific">
+        <button onclick="calculateTrig('sin')">sin</button>
+        <button onclick="calculateTrig('cos')">cos</button>
+        <button onclick="calculateTrig('tan')">tan</button>
+        <button onclick="squareRoot()">√</button>
+
+        <button onclick="calculateLog()">log</button>
+        <button onclick="calculateLn()">ln</button>
+        <button onclick="power()">x²</button>
+        <button onclick="appendValue('**')">^</button>
+    </div>
+
+     <!-- Basic Calculator -->
+    <div class="section-title">Basic Operations</div>
+
+        <div class="buttons">
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()">⌫</button>
+            <button onclick="appendValue('(')">(</button>
+            <button onclick="appendValue(')')">)</button>
+            
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button class="operator" onclick="appendValue('/')">÷</button>
+
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button class="operator" onclick="appendValue('*')">×</button>
+
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button class="operator" onclick="appendValue('-')">−</button>
+
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="percentage()">%</button>
+            <button class="operator" onclick="appendValue('+')">+</button>
+
+            <button onclick="squareRoot()">√</button>
+            <button onclick="appendValue('**')">^</button>
+            <button class="equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

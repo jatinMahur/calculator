@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    width: auto;
+    
+}
+
+.calculator {
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    width: 480px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    height: auto;
+    
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-align: right;
+    padding: 10px;
+    background: #fff;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.scientific {
+    margin-bottom: 15px;
+}
+
+button {
+    height: 55px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #ddd;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ccc;
+}
+
+.operator {
+    background: orange;
+    color: white;
+}
+
+.operator:hover {
+    background: darkorange;
+}
+
+.equal {
+    background: green;
+    color: white;
+}
+
+.equal:hover {
+    background: darkgreen;
+}
+
+.clear {
+    background: crimson;
+    color: white;
+}
+
+.clear:hover {
+    background: darkred;
+}
+
+.scientific button {
+    background: #444;
+    color: white;
+}
